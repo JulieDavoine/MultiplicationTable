@@ -1,5 +1,4 @@
 <?php 
-
 $tables = $_POST['tables'];
 function Multiplication($tableau){
     $i=0;
@@ -9,5 +8,4 @@ function Multiplication($tableau){
     }
 }
 Multiplication($tables);
-
-?>
+?>  
