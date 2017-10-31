@@ -1,5 +1,6 @@
 <?php 
 
+$tables = $_POST['tables'];
 function Multiplication($tableau){
     $i=0;
     while ($i<11){
@@ -7,6 +8,4 @@ function Multiplication($tableau){
     $i++;
     }
 }
-Multiplication(8);
-
-
+Multiplication($tables);
