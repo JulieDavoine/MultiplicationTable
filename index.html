@@ -8,23 +8,22 @@
     <title>Table de Multiplication</title>
 </head>
 <body>
-    <form method="post" action="traitement.php">
+    <form method="post" action="page.php">
 
-       <label for="choix">Merci de sélectionner la table que vous voulez consulter</label><br />
+       <label for="choix">Merci de sélectionner la table que vous voulez consulter :</label><br />
        <select name="tables" id="tables">
-           <option value="1">Table du 1</option>
-           <option value="2">Table du 2</option>
-           <option value="3">Table du 3</option>
-           <option value="4">Table du 4</option>
-           <option value="5">Table du 5</option>
-           <option value="6">Table du 6</option>
-           <option value="7">Table du 7</option>
-           <option value="8">Table du 8</option>
-           <option value="9">Table du 9</option>
-           <option value="10">Table du 10</option>
-
+           <option value="1" name="nombre">Table du 1</option>
+           <option value="2" name="nombre">Table du 2</option>
+           <option value="3" name="nombre">Table du 3</option>
+           <option value="4" name="nombre">Table du 4</option>
+           <option value="5" name="nombre">Table du 5</option>
+           <option value="6" name="nombre">Table du 6</option>
+           <option value="7" name="nombre">Table du 7</option>
+           <option value="8" name="nombre">Table du 8</option>
+           <option value="9" name="nombre">Table du 9</option>
+           <option value="10" name="nombre">Table du 10</option>
        </select>
-
+       <input type="submit" name="message" value="Envoyer"/> 
 </form>
     
 </body>
