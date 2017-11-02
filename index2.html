@@ -8,22 +8,22 @@
     <title>Table de Multiplication</title>
 </head>
 <body>
-    <form method="post" action="page.php">
+    <form method="post" action="checkbox.php">
 
        <label for="choix">Merci de sélectionner la table que vous voulez consulter :</label><br />
-    
-           <input name="tables" type="checkbox" value="1"/><label for="text">Table du 1</label>
-           <input name="tables" type="checkbox" value="2"/><label for="text">Table du 2</label>
-           <input name="tables" type="checkbox" value="3"/><label for="text">Table du 3</label>
-           <input name="tables" type="checkbox" value="4"/><label for="text">Table du 4</label>
-           <input name="tables" type="checkbox" value="5"/><label for="text">Table du 5</label>
-           <input name="tables" type="checkbox" value="6"/><label for="text">Table du 6</label>
-           <input name="tables" type="checkbox" value="7"/><label for="text">Table du 7</label>
-           <input name="tables" type="checkbox" value="8"/><label for="text">Table du 8</label>
-           <input name="tables" type="checkbox" value="9"/><label for="text">Table du 9</label>
-           <input name="tables" type="checkbox" value="10"/><label for="text">Table du 10</label><br />
 
-    
+                    <input name="tables[]" type="checkbox" value="1"/><label for="text">Table de 1</label>
+                    <input name="tables[]" type="checkbox" value="2"/><label for="text">Table de 2</label>
+                    <input name="tables[]" type="checkbox" value="3"/><label for="text">Table de 3</label>
+                    <input name="tables[]" type="checkbox" value="4"/><label for="text">Table de 4</label>
+                    <input name="tables[]" type="checkbox" value="5"/><label for="text">Table de 5</label>
+                    <input name="tables[]" type="checkbox" value="6"/><label for="text">Table de 6</label>
+                    <input name="tables[]" type="checkbox" value="7"/><label for="text">Table de 7</label>
+                    <input name="tables[]" type="checkbox" value="8"/><label for="text">Table de 8</label>
+                    <input name="tables[]" type="checkbox" value="9"/><label for="text">Table de 9</label>
+                    <input name="tables[]" type="checkbox" value="10"/><label for="text">Table de 10</label><br />
+
+        <input type="reset" value="Annuler">
        <input type="submit" name="message" value="Envoyer"/> 
 </form>
     

@@ -8,4 +8,6 @@ function Multiplication($tableau){
     }
 }
 Multiplication($tables);
+
+
 ?>  
