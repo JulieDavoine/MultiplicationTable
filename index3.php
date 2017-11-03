@@ -44,41 +44,35 @@
             </select>
             <div class="button">
                 <input type="reset" value="Annuler">
-                <input type="submit" name="message" value="Envoyer"/> 
+                <input type="submit" name="envoyer" value="Envoyer"/> 
             </div>
 
             <?php  
-            if(isset($_POST['message']))
+            
+                if(isset($_POST['envoyer']))
             {
                 $random = mt_rand(1,10);
                 $tables = $_POST['tables'];
                 echo("Combien font ".$tables."x".$random." ?");
+                echo("<input type='hidden' value='<?php echo($result); ?>' name='reponse'/>");
             }
-            if(isset($_POST['envoyer']))
-            {   
-                $random = mt_rand(1,10);
-                $tables = $_POST['tables'];
+            
+                if(isset($_POST['reponse']))
+            {                  
                 $result = $tables*$random;
                 $reponse = $_POST['reponse'];
-                echo("<br/>".$reponse."<br/>");
-                echo("<br/>".$result."<br/>");
                 
-                if($reponse == $result)
-                {    
-                    echo ("Bonne réponse !");
+                if($reponse == $result){
+                    echo("Bonne réponse !");
+                    
                 }
-                else
+                else{
                     echo("Mauvaise réponse !");
+                }
             }
             ?>
             
-            <input type='text' name='reponse'/>
-            <input type='submit' name='envoyer'>       
-
-           
-
-
         </form>  
     </div>
 </body>
-</html>
+</html> 
